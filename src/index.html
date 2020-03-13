@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Random Quotes App</title>
+    <title>Deezer</title>
 </head>
 <body>
-<div class="background js-background">
+<div class="formSearch js-formSearch">
+    <img src="img/logo.png">
+    <form id="js-searchArtiste" >
+        <fieldset>
+            <input type="text" class="search js-search" name="search"  placeholder="Search artiste..." autocomplete="off"/>
+        </fieldset>
+        <input type="button" value="Search" class="button">
+    </form>
+</div>
+<div class="response js-response">
 </div>
 <div class="container js-container">
-    <p class="greeting js-greeting"></p>
-    <div class="quote js-quote">
-        <div class="quote__text js-quote-text"></div>
-        <p class="quote__author js-quote-author"></p>
-    </div>
+    <div class="artist js-artist"></div>
+    <div class="song js-song"></div>
 </div>
 </body>
 </html>

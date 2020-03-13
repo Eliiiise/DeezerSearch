@@ -1,3 +1,6 @@
+import '../css/app.scss';
+import Search from "./search";
+
 class App {
     constructor () {
         this.initApp();
@@ -5,6 +8,7 @@ class App {
 
     initApp () {
       // Start application
+        new Search();
     }
 }
 

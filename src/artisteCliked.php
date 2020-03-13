@@ -3,12 +3,12 @@
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 
-$name=$_GET['q'];
+$id=$_GET['id'];
 
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://api.deezer.com/search/artist?q=$name",
+  CURLOPT_URL => "https://api.deezer.com/artist/$id",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,

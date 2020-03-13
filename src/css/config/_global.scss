@@ -4,3 +4,10 @@ body {
   position: relative;
   height: 100vh;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: calc(100% - 100px);
+}

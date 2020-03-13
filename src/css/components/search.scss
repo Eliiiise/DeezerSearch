@@ -1,0 +1,103 @@
+.formSearch {
+  width: 100%;
+  background-color: $light-grey;
+  display: flex;
+  align-items: center;
+  height: 100px;
+
+  img {
+    width: 100px;
+    margin-left: 60px;
+  }
+
+  form {
+    display: flex;
+    margin-left: 20%;
+
+    .search {
+      padding: 10px 20px;
+      border: none;
+      width: 500px;
+      background-color: rgba(255,255,255,0.8);
+      color: $dark-grey;
+      margin-left: -20px;
+    }
+
+    .search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $grey;
+      opacity: 1; /* Firefox */
+    }
+
+    .button {
+      background-color: $blue;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+    }
+  }
+}
+
+.response {
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  a {
+    width: 50%;
+
+    .artisteResponse {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: solid 0.5px $light-grey;
+      padding: 10px;
+
+      .main {
+        display: flex;
+
+        width: 300px;
+        justify-content: space-between;
+
+        img {
+          border-radius: 50%;
+          height: 80px;
+          margin: 0 20px;
+        }
+
+        div {
+          width: 50%;
+          margin-left: -100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          p:nth-of-type(1){
+            font-weight: bolder;
+            font-size: 18px;
+            margin-bottom: 5px;
+          }
+          p:nth-of-type(2){
+            color: $dark-grey;
+          }
+        }
+      }
+
+      >p {
+        margin-right: 20px;
+        width: 100px;
+        color: $dark-grey;
+      }
+    }
+  }
+}
+
+.response::-webkit-scrollbar {
+  display: none;
+}
+
+

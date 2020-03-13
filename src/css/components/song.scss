@@ -1,0 +1,36 @@
+.song {
+
+  width: calc( 100% - 550px);
+  max-width: 600px;
+  margin-right: 100px;
+
+  >div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5%;
+
+    main {
+      margin-left: 40px;
+
+      .title {
+        font-size: 18px;
+        font-weight: bolder;
+        margin-bottom: 5px;
+      }
+
+      .album {
+        font-size: 12px;
+      }
+    }
+
+
+
+    audio {
+      display: block;
+      width: 300px;
+    }
+  }
+
+}
